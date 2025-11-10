@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
+import { Game } from "../game/game";
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  imports: [Game],
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
 export class User {
   //propiedades
   username = "GG";
-  isLoggedIn = true;
+  isLoggedIn = false;
+
+  great(){
+    alert("holi")
+  }
 }

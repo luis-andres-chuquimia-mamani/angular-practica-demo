@@ -1,7 +1,14 @@
+
 <section>
     @if (isLoggedIn) {
+        <img (click)="great()" src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/25.png" alt="photo" >
         <p>Bienvenido {{username}}</p>
+        
+        <app-game username="{{username}}" ></app-game>
+
     }@else{
-        <P>Inicia session :] </P>
+        <button (click)="isLoggedIn = true ">Inicia session :]</button>
     }
+    
 </section>
+
